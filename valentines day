@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Question</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: pink;
+            margin-top: 50px;
+        }
+        h1 {
+            color: red;
+        }
+        #buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+        }
+        #yes {
+            background-color: lightgreen;
+        }
+        #no {
+            background-color: lightcoral;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<img src="sunny.png" alt="girl astronaut friend" width="300">
+    <h1>Hiii Sunny!!! Valentine's day pt 3?? ❤️</h1>
+
+    <div id="buttons">
+        <button id="yes" onclick="yesResponse()">Yes 😊</button>
+        <button id="no" onmouseover="moveNoButton()">No 😢</button>
+    </div>
+
+    <script>
+        function yesResponse() {
+            alert("Yay! 💖 u make me the happiest man in the wurld :]");
+        }
+
+        function moveNoButton() {
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            document.getElementById("no").style.left = x + "px";
+            document.getElementById("no").style.top = y + "px";
+        }
+    </script>
+
+</body>
+</html>
